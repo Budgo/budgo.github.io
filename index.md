@@ -1,6 +1,9 @@
+<!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<h2>I'm Budgo.</h2>
+
+<h1>Hello.</h1>
+<p>I have come</p>
+
 </body>
 </html>
