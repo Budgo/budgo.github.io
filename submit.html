@@ -82,7 +82,7 @@
         function submitForm() {
             let name = document.getElementById("name").value;
             let didComplete = document.getElementById("didComplete").value;
-            let message = String(name + " - " + didComplete + " - " + Date());
+            let message = String(name.concat(" - " + didComplete + " - " + Date()));
             document.getElementById("preview").innerHTML = message;
             getElementById("preview").innerHTML = message;
             // getElementById('preview').innerHTML = Date()
