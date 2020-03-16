@@ -72,6 +72,7 @@
           </form>
 
         <button onclick="submitForm();" id="submit">Submit</button>
+        
 
         <p id=preview>Preview of Output</p>
 
@@ -82,7 +83,7 @@
             let name = document.getElementById("name").value;
             let didComplete = document.getElementById("didComplete").value;
             let message = String(name + " - " + didComplete + " - " + Date());
-            getElementById("preview").innerHTML = message;
+            document.getElementById("preview").innerHTML = message;
         };
 
     </script>
