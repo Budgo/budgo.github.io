@@ -62,9 +62,6 @@
             <input type="text" id="Name Input"/>
         </form>
         <br>
-        <form>
-            <input type = "">
-        </form>
 
         <form>
             <input type="radio" id="yes" name="didComplete" value="yes">
@@ -73,5 +70,17 @@
             <label for="no">No, I did not do my French homework!</label><br>
           </form>
 
+        <button onclick="submitForm();" id="submit">Submit</button>
+
     </body>
+
+    <script>
+        function submitForm() {
+            let name = document.getElementById("name").value;
+            let didComplete = document.getElementById("didComplete").value;
+            let message = name + " - " + didComplete + " - " + Date();
+            getElementById("submit").innerHTML = message;
+        };
+
+    </script>
 </html>
