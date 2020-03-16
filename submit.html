@@ -72,7 +72,7 @@
           </form>
 
         <!--<button onclick="submitForm();" id="submit">Submit</button>-->
-        <button onclick="getElementById('preview').innerHTML = Date()">This will show date when clicked.</button>
+        <button onclick="submitForm()">Submit</button>
 
         <p id=preview>Preview of Output</p>
 
@@ -84,6 +84,8 @@
             let didComplete = document.getElementById("didComplete").value;
             let message = String(name + " - " + didComplete + " - " + Date());
             document.getElementById("preview").innerHTML = message;
+            getElementById("preview").innerHTML = message;
+            // getElementById('preview').innerHTML = Date()
         };
 
     </script>
